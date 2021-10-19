@@ -1,21 +1,62 @@
-/*
- * Import all top level partials here
- */
-
-@import 'base/fonts';
-@import 'base/scaffolding';
+@import 'base/norm';
+@import 'base/variables';
+@import 'utils/mixins.scss';
+@import 'utils/placeholder.scss';
 body {
-    background-color: teal;
+    background-color: darkcyan;
 }
 
-.zal {
-    width: 100px;
-    height: 100px;
-    background-color: pink;
+.logo {
+    @include font($first-font, 30px, 36px, $first-color, 900);
+    @include text-decoration(capitalize, none);
 }
 
-.zal2 {
-    width: 100px;
-    height: 100px;
-    background-color: purple;
+.nav-actions-list {
+    @extend %list-reset;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-actions-list__svg {
+    fill: $first-color;
+    @include transition(fill, 200ms, linear);
+    &:hover {
+        fill: $second-color;
+    }
+}
+
+.nav-actions-list__item:not(:nth-last-of-type(1)) {
+    margin-right: 40px;
+}
+
+.nav-list {
+    @extend %list-reset;
+    display: flex;
+    /* margin-right: 55px; */
+}
+
+.nav-list__item:not(:nth-last-of-type(1)) {
+    margin-right: 55px;
+}
+
+.nav-list__link {
+    @include font($first-font, 14px, 17px, $first-color, 400);
+    @include text-decoration(uppercase, none);
+    @include transition(color, 200ms, linear);
+    &:hover {
+        color: $second-color;
+        &::after {
+            display: block;
+            background-color: rgba(252, 227, 138, 1);
+            transform: translatey(10px);
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0);
+        @include transition('transform, background-color', 200ms, linear);
+    }
 }
