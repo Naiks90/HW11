@@ -1,0 +1,7 @@
+.nav {
+    @extend %flex-between-center;
+}
+
+.nav-list {
+    margin-right: 55px;
+}

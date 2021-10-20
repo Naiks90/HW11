@@ -1,0 +1,9 @@
+.btn-more {
+    @include font($primary-font, 14px, 17px, $primary-color, 900);
+    width: 160px;
+    height: 40px;
+    background-color: rgba($primary-color, 0);
+    border: #fff solid 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

@@ -25,3 +25,8 @@
     transition-duration: $duration;
     transition-timing-function: $function;
 }
+
+@mixin text-mb-position($mb, $position: center) {
+    margin-bottom: $mb;
+    text-align: $position;
+}

@@ -1,0 +1,4 @@
+.logo {
+    @include font($primary-font, 30px, 36px, $primary-color, 900);
+    @include text-decoration(capitalize, none);
+}

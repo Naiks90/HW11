@@ -1,0 +1,24 @@
+.section-slogan {
+    @extend %flex-between-center;
+    flex-direction: column;
+}
+
+.section-slogan__span {
+    @include font($script-font, 24px, 29px, $primary-dark, 400);
+    margin-bottom: 18px;
+}
+
+.section-slogan__title {
+    @include font($primary-font, 30px, 36px, $primary-dark, 900);
+    text-transform: uppercase;
+    margin: 0px;
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: $primary-red;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}

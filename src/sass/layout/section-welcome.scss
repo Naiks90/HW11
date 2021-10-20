@@ -1,0 +1,22 @@
+.welcome {
+    background-image: url('../images/Layer15-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    margin-bottom: 45px;
+}
+
+@media sreen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .welcome {
+        background-image: url('../images/Layer15@2x-min.jpg');
+    }
+}
+
+.welcome__gradient {
+    background: $gradient;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 255px;
+}

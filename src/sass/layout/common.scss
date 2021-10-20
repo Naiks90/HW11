@@ -1,0 +1,28 @@
+.wraper {
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    width: 1201px;
+    margin: 0 auto;
+}
+
+.mb-66 {
+    margin-bottom: 66px;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.services {
+    margin-bottom: 100px;
+}
+
+.text {
+    margin: 0 auto;
+    @include font($secondary-font, 15px, 24px, $primary-gray, 400);
+    @include text-mb-position(90px, center);
+    width: 75%;
+}

@@ -1,0 +1,18 @@
+.slogan {
+    @extend %flex-between-center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 821px;
+}
+
+.slogan__span {
+    @include font($script-font, 72px, 86px, $primary-color, 400);
+    @include text-mb-position(45px, center);
+}
+
+.slogan__title {
+    @include font($primary-font, 150px, 180px, $primary-color, 900);
+    @include text-mb-position(110px, center);
+    margin-top: 0px;
+    text-transform: uppercase;
+}

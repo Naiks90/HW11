@@ -1,0 +1,17 @@
+.nav-actions-list {
+    @extend %list-reset;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-actions-list__svg {
+    fill: $primary-color;
+    @include transition(fill, 200ms, linear);
+    &:hover {
+        fill: $secondary-color;
+    }
+}
+
+.nav-actions-list__item:not(:nth-last-of-type(1)) {
+    margin-right: 40px;
+}
