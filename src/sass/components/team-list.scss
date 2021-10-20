@@ -1,0 +1,55 @@
+.team-list {
+    @extend %list-reset;
+    @extend %flex-between-center;
+}
+
+.team-list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-list__wrap {
+    background-color: $third-color;
+    display: flex;
+    margin-bottom: 27px;
+    &:hover {
+        .team-list__img {
+            transform: translate(-10px, -10px);
+        }
+        .team-list__gradient {
+            opacity: 1;
+            transform: translate(-10px, -10px);
+            background: $gradient;
+        }
+    }
+}
+
+.team-list__img {
+    @include transition(transform, 200ms, linear);
+    display: flex;
+}
+
+.team-list__gradient {
+    opacity: 0;
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    @include transition('transform, opacity', 200ms, linear);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-list__name {
+    @include font($primary-font, 14px, 17px, $primary-dark, 900);
+    @include text-mb-position(14px, center);
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.team-list__span {
+    @include font($secondary-font, 15px, 24px, $primary-gray, 300);
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+}

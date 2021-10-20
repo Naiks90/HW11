@@ -26,3 +26,12 @@
     @include text-mb-position(90px, center);
     width: 75%;
 }
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.subscribe-form {
+    display: flex;
+    border: 1px solid #e5e5e5;
+}

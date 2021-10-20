@@ -1,0 +1,9 @@
+.btn-sub {
+    @include font($primary-font, 14px, 17px, $primary-color, 900);
+    padding: 0px;
+    border: none;
+    background-color: $third-color;
+    width: 151px;
+    height: 40px;
+    text-transform: uppercase;
+}

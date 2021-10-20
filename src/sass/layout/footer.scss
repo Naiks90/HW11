@@ -1,0 +1,13 @@
+.footer__content {
+    border-top: 1px $footer-border solid;
+    @extend %flex-between-center;
+    padding: 10px 0px;
+}
+
+.footer__info {
+    @include font($primary-font, 14px, 17px, $primary-dark, 400);
+}
+
+.footer__logo {
+    color: $primary-red;
+}

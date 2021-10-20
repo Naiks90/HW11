@@ -10,79 +10,17 @@
 @import 'components/btn-more.scss';
 @import 'components/section-slogan.scss';
 @import 'components/services-list.scss';
+@import 'components/team-list.scss';
+@import 'components/btn-icon.scss';
+@import 'components/btn-sub.scss';
+@import 'components/input-email.scss';
 // layout
 @import 'layout/common.scss';
 @import 'layout/header.scss';
 @import 'layout/nav.scss';
 @import 'layout/section-welcome.scss';
-body {
-    background-color: darkcyan;
-}
-
-.team-list {
-    list-style: none;
-    margin-top: 0px;
-    padding: 0px;
+@import 'layout/footer.scss';
+.subscribe-form {
     display: flex;
-    justify-content: space-between;
-}
-
-.team-list__item {
-    display: flex;
-    flex-direction: column;
-}
-
-.team-list__wrap {
-    background-color: #95e1d3;
-    display: flex;
-    margin-bottom: 27px;
-}
-
-.team-list__img {
-    transition-property: transform;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
-    display: flex;
-}
-
-.team-list__wrap:hover .team-list__img {
-    transform: translate(-10px, -10px);
-}
-
-.team-list__gradient {
-    opacity: 0;
-    width: 380px;
-    height: 470px;
-    position: absolute;
-    transition-property: transform, opacity;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.team-list__wrap:hover .team-list__gradient {
-    opacity: 1;
-    transform: translate(-10px, -10px);
-    background: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-}
-
-.team-list__name {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-    font-weight: 400;
-    margin-bottom: 14px;
-}
-
-.team-list__span {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    line-height: 24px;
-    color: #999999;
-    text-align: center;
-    font-weight: 300;
+    border: 1px solid #e5e5e5;
 }

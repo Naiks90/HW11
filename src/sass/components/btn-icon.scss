@@ -1,0 +1,26 @@
+.btn-icon {
+    width: 55px;
+    height: 56px;
+    border: none;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondary-color;
+    @include transition(background-color, 200ms, linear);
+    cursor: pointer;
+    &:hover {
+        background-color: $primary-red;
+        .btn-icon__svg {
+            fill: $primary-color;
+        }
+    }
+}
+
+.btn-icon:not(:last-of-type) {
+    margin-right: 1px;
+}
+
+.btn-icon__svg {
+    fill: $primary-red;
+    @include transition(fill, 200ms, linear);
+}

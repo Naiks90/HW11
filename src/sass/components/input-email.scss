@@ -1,0 +1,7 @@
+.input-email {
+    @include text-decoration(capitalize, none);
+    @include font($secondary-font, 15px, 17px, $primary-gray, 300);
+    width: 228px;
+    font-style: italic;
+    border: none;
+}
